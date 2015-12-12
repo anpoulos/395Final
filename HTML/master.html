@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}
+    {% endblock %}
+</head>
+
+<body>
+
+<div class="topBar">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/sources">Sources</a></li>
+    </ul>
+</div>
+
+<div class="sideBar">
+    <ul>Topics
+        <li><a href="/Morality">Morality</a></li>
+        <li><a href="/Frameworks">Frameworks</a></li>
+        <li><a href="/Challenges">Challenges</a></li>
+        <li><a href="/PolicyVacuums">Policy Vacuums</a></li>
+        <li><a href="/PhysicalLimitations">Physical Limitations</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+
+</body>
+</html>

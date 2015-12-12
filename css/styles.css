@@ -1,5 +1,75 @@
-.informationParagraphs{
-    margin-left: 40px;
-    width: 600px;
+.sideBar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #333;
+    color: white;
 }
+
+.sideBar > ul > li a {
+    display: block;
+    color: white;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+.sideBar > ul > li a:hover {
+    background-color: darkslateblue;
+    color: white;
+}
+
+.topBar{
+    border-style: solid;
+    border-width: 2px;
+}
+
+.topBar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topBar > ul > li {
+    margin-left: 10%;
+    float: left;
+}
+
+.topBar > ul > li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topBar > ul > li > a:hover {
+    background-color: darkslateblue;
+}
+
+.sideBar {
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    float: left;
+    width: 200px;
+}
+
+.content {
+    margin-top: 20px;
+    margin-left: 202px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+body{
+    overflow: auto;
+    opacity: .75;
+    background: url("../content/BG.jpg");
+    background-size: cover;
+}
+
+
 

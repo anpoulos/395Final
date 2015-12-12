@@ -1,0 +1,16 @@
+.informationParagraphs{
+    margin-left: 75px;
+    width: auto;
+    color: black;
+}
+
+.informationHeader{
+    margin-left: 45px;
+    color: midnightblue;
+    font-style: italic;
+}
+
+.information {
+    margin-top: 25px;
+    background-color: white;
+}
