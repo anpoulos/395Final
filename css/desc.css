@@ -1,16 +1,27 @@
 .informationParagraphs{
     margin-left: 75px;
+    margin-right: 50px;
     width: auto;
     color: black;
 }
 
 .informationHeader{
+    margin-right: 45px;
     margin-left: 45px;
     color: midnightblue;
     font-style: italic;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-right: none;
+    border-left: none;
 }
 
 .information {
     margin-top: 25px;
     background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-right: none;
+    border-left: none;
 }
