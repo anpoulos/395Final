@@ -22,7 +22,7 @@
 
 @font-face{
     font-family: automation;
-    src: url(SFAutomaton.ttf);
+    src: url(fonts/SFAutomaton.ttf);
 }
 
 .topBar{

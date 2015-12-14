@@ -38,9 +38,19 @@ class mainHandler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('index.html')
         self.response.write(template.render({}))
 
+class topicHandler(webapp2.RequestHandler):
+    def get(self,topics,topic):
+        try:
+            template = JINJA_ENVIRONMENT.get_template(str(topic)+'.html')
+            self.response.write(template.render({}))
+        except:
+            template = JINJA_ENVIRONMENT.get_template('error.html')
+            self.response.write(template.render({}))
 
 app = webapp2.WSGIApplication([
     ('/', mainHandler),
     webapp2.Route(r'/<fromhome>',
-                  handler=singleHandler)
+                  handler=singleHandler),
+    webapp2.Route(r'/<topics>/<topic>',
+                  handler=topicHandler)
 ], debug=True)
