@@ -81,7 +81,7 @@
 body{
     overflow: auto;
     opacity: .8;
-    background: url("../content/BG.jpg");
+    background: url("../content/background/BG.jpg");
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;

@@ -1,0 +1,21 @@
+
+.informationHeader2{
+    margin-right: 45px;
+    margin-left: 45px;
+    color: darkred;
+    font-style: italic;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    border-right: none;
+    border-left: none;
+}
+
+.citedSources {
+    margin-left: 20px;
+}
+
+.citedSources > ul > li{
+    margin-bottom: 5px;
+    list-style: none;
+}
