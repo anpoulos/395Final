@@ -27,3 +27,9 @@
     border-right: none;
     border-left: none;
 }
+
+
+img {
+    max-height: 300px;
+    width: auto;
+}
