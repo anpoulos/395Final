@@ -1,9 +1,13 @@
+@font-face { font-family: Robotic; src: url('HomemadeRobotfont.ttf'); }
+
 .sideBar > ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #333;
     color: white;
+    font-family: Robotic;
+    font-size: 24px;
 }
 
 .sideBar > ul > li a {
@@ -24,6 +28,8 @@
     border-width: 2px;
     max-width: 1200px;
     margin-right: 30px;
+    font-family: Robotic;
+    font-size: 32px;
 }
 
 .topBar > ul {
@@ -74,6 +80,8 @@ body{
     opacity: .75;
     background: url("../content/BG.jpg");
     background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
