@@ -1,0 +1,119 @@
+{% extends "master.html" %}
+
+{% block title %} Frameworks {% endblock %}
+
+{% block head %}
+
+<link rel="stylesheet" href="../css/desc.css">
+
+{% endblock %}
+
+{% block content %}
+
+<div class="information">
+
+    <h1 class="informationHeader">Ethical frameworks - Autonomous Robots</h1>
+
+    <div class="informationParagraphs">
+        <p>
+            Frameworks for debate:
+            Deontological (rule based)
+            Consequentialism (utilitarianism)
+            Virtue ethics –  hybrid
+        </p>
+        <p>
+            Top down – any approach that takes a specified ethical theory and analyzes its computational requirements to guide
+            the design of algorithms and subsystems capable of implementing that theory.
+            Definition IRL: Giving the robot a set of finite rules for which it will obey and adhere to
+        </p>
+        <p>
+            Bottom up – emphasis placed on creating an environment where an agent explores courses of action and is rewarded
+            for behavior that is morally praiseworthy. The artificial agent learns through its experience. Ethical principles must be discovered or constructed.
+            Definition IRL: The robot learns just as a child learns, however at a super-induced rate without forgetting.
+        </p>
+
+        <p>
+            Top Down
+            Set of rules that can be turned into an algorithm. Easy peeasy.
+            However various ethical theories are better in specific situations so giving a robot one in general may work well in one scenario but poorly in another.
+            Deontological theory – morality is based on following a set of rules
+            duty based ethics
+            using Asimov's three laws of robotics (I.E. don't harm or allow humans to be harmed, obey humans, and promote self preservation)
+            Incomplete as stands, example the first law is useless due to ignorance. A robot could harm a human as long as it did not knowingly intend to harm one. In response for a request for water, it could serve a human bacteria filled water, throw a human down a well, or drown one in a lake..
+            possible fix is to rewrite the first law to say “A robot may do nothing that to its knowledge will harm a human being”
+            Problem with such a fix – clever criminals could use multiple robots to have one place a stick of dynamite on the ground. Another push a wick into a piece of insignificant dynamite. And another to light a random wick.
+            PROBLEM with deontological approach is that the rules could be followed precisely but still unexpected consequences could arise.
+            Also the “degree” of risk comes into play that produces a problem for solely rule based ethical frameworks. Should a robot stop a human doctor from interacting with an xray since technically there is a risk for cancer?
+            Possible fix is to take away part of the first law requiring the robot to simply not harm humans (it’s not designated to – obviously because its intent is for military operations) but then by INACTION it could witness a noncombatant walk into the line of fire and not stop them because they're not strictly required to act.
+            Fixing Asimov's rules through addition
+            Adding a Zeroth law requiring that a robot may not harm all humanity, or allow humanity to come to harm. This allows a robot to harm an individual if it saves another from an existential threat.
+            Other laws have been added to try and fix the debacle
+            a fourth law that the robot must know it’s a robot
+            a fourth law that a robot must establish its identity as a robot
+            FURTHER PROBLEMS with strictly using rule based ethics
+            How would a robot identify a surgeon wielding a scalpel over a wounded combatant vs an enemy holding a knife
+            Robot would then need to understand “context” 'exceptions to rules”, all of which would require constant updates regularly
+            Last final conclusion that rule based ethical theories fail
+            The robot becomes a part of the 'slave mentality'
+            Slave mentality – a robot strictly acting by a set of rules isn't making ethical decisions, rather carrying out ethical decisions of their commanders.
+            Deontological approaches maintain that rules must be followed regardless of consequences.
+            Utilitarianism – consequence based (SPOILER: it fails miserably to be used for an ethical framework)
+            Proposes that a robotic agent should calculate the odds of a given scenario and choose the greater good.
+            Solely using this framework is terrible.
+            If the scenario is incalculable the entire framework unravels
+            To what degree should the greater good be followed – executing one person to stop a riot that could cause further economic damage...
+            Both approaches Deontological and Utilitarian fails in solely using top down ethical framework because the computational loads are insurmountable. It’s impossible to foresee – and then code for – every possible situation in any scenario.
+            Alone it fails. But what about a combo!
+        </p>
+
+        <p>
+            Bottom Up
+            Alan Turing was the first to approach the idea that AI should mimic children. - meaning experience builds the decisions they make
+            Dynamic morality where the ongoing feedback from different mechanisms facilitate varied responses.
+
+            WEAKNESS
+            Not knowing which goals to use for evaluating choices
+            Work best when they are directed at achieving one clear goal.
+            Fail when the goal is incomplete or confusing.
+            Alone bottom up frameworks fail, but perhaps combined with a set of general goals or rules it could produce the desired result! - get to that later
+        </p>
+
+        <p>
+            C-C-C-COMBO!
+            Combining the top down with the bottom up into a hybrid ethical framework produces virtue ethics
+
+            Virtue Ethics
+            bottom up approach shaped by evolution and learning top down criteria for reasoning about ethical challenges
+            Not “what should I do in this situation” but rather “what type of character do I want this agent to have – virtue or vice?”
+            Ones actions do not constitute ones morality but rather reveal it.
+            Hypothetical imperatives link good means to good ends
+            Virtues are role dependent – thus fireman virtues differ greatly from salesman from
+            Top Down
+            Determine how to represent virtuous patterns and motivations for the robot and how the system would determine which virtue or action representing the virtue should be called upon in a particular situation.
+            Virtues in humans are linked to emotional motivation – thus would the robot need to develop or be given emotions?
+            Bottom Up
+            Through the gradual accumulation of data the network (robot brain – mainframe – database of virtues) develops generalized responses that go beyond the particulars of which it was trained.
+            Combination of bottom up and top down to create virtue ethics
+            a way to both evaluate the actions of one, and as a vehicle for providing rational explanations of the behavior
+            Some top-down rules are combined with machine learning to best approximate the ways in which humans actually gain ethical expertise.
+            Learning through peer interaction will be a large part of the developing of virtues – thus we need be concerned with WHO they're interacting with
+        </p>
+
+        <p>
+            Pros/Cons for utilizing autonomous robots
+            PRO: Systems with limited moral decision making abilities are more desirable than 'ethically blind' systems due to a decrease in negative decisions possible.
+            CON: Robots will allow political leaders to choose war as a more casual option to conflict since human casualties could potentially be lessened....for one side at least.
+            PRO: Robots must use proportionality. To drive an enemy from a hillside it must decide to use artillery shells instead of a nuclear bomb. But once this proportionality is learned and calculated time and time again they will be more accurate in future situations.
+            CON: The discrimination between a combatant and noncombatant (thanks ISIS...) is not as trivial as back in 1942 when anyone with a swastika and a grey uniform was the enemy (assuming you were not on the axis's side)
+            PRO: Robots would be more accurate and efficient. Example is the predator UAV drone. It cannot fire until a human controller has targeted solely a combatant target and pushed a button. But the lag between the pulling of a trigger and the weapon actually firing (even though it could be a few milliseconds), as well as the electromagnetic connections between the remote controller and the weapon means that even if the target is 100% in site at the time of weapon execution, the actual firing might be off by a slight bit, which isn't a problem when the weapon is a bomb and the target is in the middle of a desert, but what about a target in a city? - Thus a sufficiently autonomous robot that could fire the moment it acquires the target directly, instead of waiting for a command would be more effective in unintended deaths.
+            PRO:  Robots programmed to never break the LOW (Laws of War) will refuse immoral orders, as opposed to human soldiers who are trained to unfailingly follow orders with no personal input.
+        </p>
+
+
+
+    </div>
+
+</div>
+
+
+{% endblock %}

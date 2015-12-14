@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+
+{% block title %} Physical Limitations {% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+
+<!--Place HTML content here-->
+
+
+{% endblock %}
