@@ -47,10 +47,16 @@ class topicHandler(webapp2.RequestHandler):
             template = JINJA_ENVIRONMENT.get_template('error.html')
             self.response.write(template.render({}))
 
+class NotFoundPageHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('error.html')
+        self.response.write(template.render({}))
+
 app = webapp2.WSGIApplication([
     ('/', mainHandler),
     webapp2.Route(r'/<fromhome>',
                   handler=singleHandler),
     webapp2.Route(r'/<topics>/<topic>',
-                  handler=topicHandler)
+                  handler=topicHandler),
+    ('/.*', NotFoundPageHandler)
 ], debug=True)
